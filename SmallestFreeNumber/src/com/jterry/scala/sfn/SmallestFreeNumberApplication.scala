@@ -1,11 +1,7 @@
 package com.jterry.scala.sfn
 
 object SmallestFreeNumberApplication extends App {
-  println("Hello World")
-  
-  var list = Array(0, 1, 2, 4, 5, 6)
-  var sfn = getMinFree(list)
-  println(sfn.toString())
+  println(getMinFree(Array(0, 1, 2, 4, 5, 6)).toString())
 	
   def getMinFree (xs : Array[Int]) : Int = {
     return getMinFreePrime(xs, 0, xs.length)
@@ -30,7 +26,6 @@ object SmallestFreeNumberApplication extends App {
       case true => getMinFreePrime(right, pv, right.length)
       case _    => getMinFreePrime(left, start, left.length)
     }
-    
   }
 	
   def computePartition (start : Int, len : Int) : Int = {
