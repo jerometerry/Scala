@@ -1,0 +1,44 @@
+package com.jterry.scala.sfn
+
+object SmallestFreeNumberApplication extends App {
+  println("Hello World")
+  
+  var list = Array(0, 1, 2, 4, 5, 6)
+  var sfn = getMinFree(list)
+  println(sfn.toString())
+	
+  def getMinFree (xs : Array[Int]) : Int = {
+    return getMinFreePrime(xs, 0, xs.length)
+  }
+	
+  def getMinFreePrime (xs : Array[Int], start : Int, len : Int) : Int = {
+    if (len == 0)
+      return start
+      
+    var pv = computePartition(start, len)
+    var parts = partitionList(xs, pv)
+    var left = parts._1
+    var right = parts._2
+    var leftLen = left.length
+    var rightLen = len - leftLen
+    var rightStart = start + leftLen
+    var inRight = rightStart == pv
+    
+    if (inRight)
+      return getMinFreePrime(right, pv, rightLen)
+    else
+      return getMinFreePrime(left, start, leftLen)
+  }
+	
+  def computePartition (start : Int, len : Int) : Int = {
+    return start + 1 + len / 2
+  }
+	
+  def partitionList (xs : Array[Int], pv : Int) : (Array[Int], Array[Int]) = {
+    return xs.partition(_ < pv);
+  }
+	
+  def intToString (n : Int) : String = {
+    return n.toString()
+  }
+}
