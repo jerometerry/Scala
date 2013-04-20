@@ -1,9 +1,0 @@
-package com.jterry.scala.sfn
-
-object SmallestFreeNumberApplication extends App {
-	println("Hello World")
-	
-	def getMinFree (s : String, xs : Integer[]) : Integer = {
-			return 0
-	}
-}
