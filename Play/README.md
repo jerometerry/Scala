@@ -15,20 +15,22 @@ Sandbox for toying with the Scala Play Framework
 
 To setup play on Windows with Eclipse:
 
-1. Install the Oracle JDK
-2. Install Eclipse
-3. Install the Scala IDE Eclipse plugin
-4. Install the Scala Play 2.0 Eclipse Plugin (from the same update site as Scala IDE plugin, under incubator).
-5. Download Scala Play
-6. Add Scala Play folder to the path, so that you can run play.bat from the command line
-7. Open command prompt, and go to the folder you want to create a Scala Play project in
-8. Run play.bat new MyProjectName to create the play project
-9. CD into the MyProjectName folder
-10. Run the command "play.bat" to bring up the play console 
-11. In the play console, run "eclipse with-source=true"
-12. Open Eclipse
-13. Import the Folder MyProjectName into eclipse
-14. in the play console, run "~run" to run the MyProjectName (run with auto-compile)
-15. Open web browser http://localhost:9000 (Scala Play Documentation should appear).
-16. Make a change to one of the files in Eclipse (e.g. change the text "Your new application is ready." in app->controllers->Application.scala)
-17. Refresh browser window
+<ol>
+<li>Install the Oracle JDK</li>
+<li>Install Eclipse</li>
+<li>Install the Scala IDE Eclipse plugin</li>
+<li>Install the Scala Play 2.0 Eclipse Plugin (from the same update site as Scala IDE plugin, under incubator).</li>
+<li>Download Scala Play</li>
+<li>Add Scala Play folder to the path, so that you can run play.bat from the command line</li>
+<li>Open command prompt, and go to the folder you want to create a Scala Play project in</li>
+<li>Run play.bat new MyProjectName to create the play project</li>
+<li>CD into the MyProjectName folder</li>
+<li>Run the command "play.bat" to bring up the play console </li>
+<li>In the play console, run "eclipse with-source=true"</li>
+<li>Open Eclipse</li>
+<li>Import the Folder MyProjectName into eclipse</li>
+<li>in the play console, run "~run" to run the MyProjectName (run with auto-compile)</li>
+<li>Open web browser http://localhost:9000 (Scala Play Documentation should appear).</li>
+<li>Make a change to one of the files in Eclipse (e.g. change the text "Your new application is ready." in app->controllers->Application.scala)</li>
+<li>Refresh browser window</li>
+</ol>
