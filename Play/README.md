@@ -3,14 +3,15 @@ Play
 
 Sandbox for toying with the Scala Play Framework
 
-Play Framework http://www.playframework.com/
-Scala IDE http://scala-ide.org/
-Typesafe Activator http://typesafe.com/activator
-Slick http://slick.typesafe.com/
-Squeryl http://squeryl.org/
-Introduction to Play Framework, James Ward. http://www.youtube.com/watch?v=9_YYgl65FLs
-The Play Framework at Linkedin, Yevgeniy Brikman. http://www.youtube.com/watch?v=8z3h4Uv9YbE
-
+<ul>
+<li>Play Framework http://www.playframework.com/</li>
+<li>Scala IDE http://scala-ide.org/</li>
+<li>Typesafe Activator http://typesafe.com/activator</li>
+<li>Slick http://slick.typesafe.com/</li>
+<li>Squeryl http://squeryl.org/</li>
+<li>Introduction to Play Framework, James Ward. http://www.youtube.com/watch?v=9_YYgl65FLs</li>
+<li>The Play Framework at Linkedin, Yevgeniy Brikman. http://www.youtube.com/watch?v=8z3h4Uv9YbE</li>
+</ul>
 
 To setup play on Windows with Eclipse:
 
